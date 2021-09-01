@@ -3,21 +3,22 @@ body{
 }
 
 .header{
-  background-color: #2b2b2b;
+  background-color: #222222;
   width: 100%;
-  height: 65px;
+  height: 55px;
   position: relative;
 }
 
 .logo{
-  height: 65px;
+  height: 45px;
+  margin: 5px 5px 5px 10px;
 }
 
 .form_left{
   display: inline-block;
   position: absolute;
   top: 22px;
-  left: 175px;
+  left: 250px;
 }
 
 .form_right{
@@ -25,4 +26,11 @@ body{
   position: absolute;
   top: 22px;
   right: 50px;
+}
+
+.navbar{
+  background-color: #4E4E4e;
+  width: 100%;
+  height: 32px;
+  position: relative;
 }
