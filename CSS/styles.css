@@ -1,8 +1,8 @@
 body{
   margin:0;
   background-color: black;
-  font-size: 17px;
-  font-family: sans-serif;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
 }
 
 .header{
@@ -20,22 +20,23 @@ body{
 .form_left{
   display: inline-block;
   position: absolute;
-  top: 12.5px;
+  top: 17px;
   left: 200px;
+  height: 25px;
 }
 
 .searchbar{
   width: 300px;
-  border-radius: 7px;
-  height: 30px;
-  border: none;
+  border-radius: 5px;
+  height: 25px;
+  border:none;
   padding:0;
 }
 
 .locationbar{
-  width: 150px;
-  border-radius: 7px;
-  height: 30px;
+  width: 125px;
+  border-radius: 5px;
+  height: 25px;
   border:none;
   padding:0;
   margin-right: 10px
@@ -65,13 +66,19 @@ body{
 .navbar a {
   color: #222222;
   text-decoration: none;
-  margin:20px;
-  font-size: 15px;
+  margin:10px 15px;
+  font-size: 14px;
+}
+
+.all_categories{
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .navbar_a{
   position: absolute;
   top: 8px;
+  margin-left: 10px;
 }
 
 .form_right_btn{
@@ -90,19 +97,19 @@ body{
   width: 100px
 }
 
+.mySlides {display: none}
 
-* {box-sizing:border-box}
+.mySlides_img {
+  vertical-align: middle;
+  width: 100%;
+  height: 300px;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 75%;
   position: relative;
   margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
 }
 
 /* Next & previous buttons */
@@ -111,8 +118,8 @@ body{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -129,14 +136,13 @@ body{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #969696;
 }
 
 /* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -184,4 +190,9 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
