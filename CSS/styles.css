@@ -5,6 +5,8 @@ body{
   font-family: Helvetica, sans-serif;
 }
 
+/*------------------------------------------------------------------------  Header  -------------------------------------------------------------------------------*/
+
 .header{
   background-color: #222222;
   width: 100%;
@@ -17,20 +19,14 @@ body{
   margin: 5px 5px 5px 10px;
 }
 
+/*Form_left contains the locationbar and the searchbar*/
+
 .form_left{
   display: inline-block;
   position: absolute;
   top: 17px;
   left: 193px;
   height: 25px;
-}
-
-.searchbar{
-  width: 300px;
-  border-radius: 5px;
-  height: 25px;
-  border:none;
-  padding:0;
 }
 
 .locationbar{
@@ -41,6 +37,16 @@ body{
   padding:0;
   margin-right: 10px
 }
+
+.searchbar{
+  width: 300px;
+  border-radius: 5px;
+  height: 25px;
+  border:none;
+  padding:0;
+}
+
+/*Form_right contains the hyperlinks*/
 
 .form_right{
   display: inline-block;
@@ -55,32 +61,11 @@ body{
   margin:0 10px 0 10px;
 }
 
-.navbar{
-  background-color: #9f9f9f;
-  width: 100%;
-  height: 32px;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 0;
+.form_right a:hover{
+  text-decoration: underline;
 }
 
-.navbar a {
-  color: #222222;
-  text-decoration: none;
-  margin:10px 15px;
-  font-size: 14px;
-}
-
-.all_categories{
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.navbar_a{
-  position: absolute;
-  top: 8px;
-  margin-left: 10px;
-}
+/*Form_right_btn contains the sign in button*/
 
 .form_right_btn{
   display: inline-block;
@@ -96,6 +81,63 @@ body{
   padding:0;
   width: 100px;
 }
+
+/*------------------------------------------------------------------------  Navbar  -------------------------------------------------------------------------------*/
+
+.navbar{
+  background-color: #9f9f9f;
+  width: 100%;
+  height: 32px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/*navbar_a contains the navigation hyperlinks*/
+
+.navbar_a{
+  position: absolute;
+  top: 8px;
+  margin-left: 190px;
+}
+
+.navbar a {
+  color: #222222;
+  text-decoration: none;
+  margin:10px 15px;
+  font-size: 14px;
+}
+
+.navbar_a a:hover{
+  text-decoration: underline;
+}
+
+/*all_categories contains the all categories dropdown*/
+
+.all_categories{
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  top: 8px;
+  margin-left: 10px;
+}
+
+.all_cat_dropdown{
+  height: 400px;
+  width: 500px;
+  background-color: #d0d0d0;
+  margin: 10px;
+  display: none;
+  z-index: 2;
+  position: absolute;
+  border: 2px black solid
+}
+
+.all_categories:hover .all_cat_dropdown{
+  display: block;
+}
+
+/*-----------------------------------------------------------------  Slideshow  --------------------------------------------------------------*/
 
 .mySlides {display: none}
 
@@ -202,12 +244,14 @@ body{
   .prev, .next,.text {font-size: 11px}
 }
 
+/*-----------------------------------------------------------------  Ads  ----------------------------------------------------------------------------*/
+
 .ad-block{
   background-color: #d0d0d0;
   display: inline-block;
   width: 100%;
   margin-top: 3px;
-  padding: 15px 0;
+  padding: 15px 0 30px 0;
 }
 
 .ad-block-h2{
@@ -216,8 +260,36 @@ body{
 
 .ad1{
   display: inline-block;
-  width: 257px;
+  width: 235px;
   height: 280px;
   border: 2px solid black;
   margin: 20px 10px 0 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.ad-img{
+  width: 205px;
+  height: 150px;
+}
+
+/*------------------------------------------------------------------  Footer  ------_---------------------------------------------------------------*/
+
+
+.footer{
+  background-color: #222222;
+  display: block;
+  text-align: center;
+  padding:10px;
+  margin-top: 2px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.footer a:hover{
+  text-decoration: underline;
 }
