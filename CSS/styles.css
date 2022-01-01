@@ -8,7 +8,7 @@ body{
 /*------------------------------------------------------------------------  Header  -------------------------------------------------------------------------------*/
 
 .header{
-  background-color: #222222;
+  background-color: #222021;
   width: 100%;
   height: 55px;
   position: relative;
@@ -16,7 +16,7 @@ body{
 
 .logo{
   height: 45px;
-  margin: 5px 5px 5px 10px;
+  margin: 5px 5px 5px 5px;
 }
 
 /*Form_left contains the locationbar and the searchbar*/
